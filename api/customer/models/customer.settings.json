@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "gst_no": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "addresses": {
+      "via": "customer",
+      "collection": "address"
+    }
+  }
+}

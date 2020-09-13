@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "hsn": {
+      "type": "integer"
+    },
+    "igst": {
+      "type": "decimal"
+    },
+    "sgst": {
+      "type": "decimal"
+    },
+    "cgst": {
+      "type": "decimal"
+    },
+    "category": {
+      "model": "category"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "pincode": {
+      "type": "string"
+    },
+    "customer": {
+      "model": "customer",
+      "via": "addresses"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
